@@ -6,12 +6,15 @@ public class Main {
     public static void main(String[] args) {
 
         // Make an object of Student.class
-        Student pasha = new Student("Pavel","Fedorov","MIT",
-                "Male",26,4356);
-
-        pasha.studentScore = 3;
+        Student pasha = new Student();
+        pasha.gender = "Male";
+        pasha.firstName = "Pavel";
+        pasha.lastName = "Fedorov";
+        pasha.faculty = "MIT";
+        pasha.age = 26;
+        pasha.studentID = 4356;
+        pasha.studentScore = 5;
         pasha.printStudentInfo();
-
 
         // Try inheritance
         Male dmitrii = new Male();
