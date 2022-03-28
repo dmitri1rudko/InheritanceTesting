@@ -16,7 +16,7 @@ public class Main {
         pasha.studentScore = 5;
         pasha.printStudentInfo();
 
-        // Try inheritance
+        // Try inheritance by Male.class
         Male dmitrii = new Male();
         dmitrii.gender = "Male";
         dmitrii.firstName = "Dmitrii";
@@ -28,7 +28,7 @@ public class Main {
         dmitrii.toDoManThings();
         dmitrii.printStudentInfo();
 
-
+        // Try inheritance by Female.class
         Female dasha = new Female();
         dasha.gender = "Female";
         dasha.firstName = "Dasha";
@@ -39,5 +39,10 @@ public class Main {
         dasha.studentScore = 5;
         dasha.madeWomenThings();
         dasha.printStudentInfo();
+
+        // Try to make an object by constructor with args
+        Student polina = new Student("Polina", "Ivanova",
+                "TECH", "Female", 22, 2345, 5);
+        polina.printStudentInfo();
     }
 }

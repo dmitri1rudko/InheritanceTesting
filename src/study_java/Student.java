@@ -20,20 +20,20 @@ public class Student {
 
     // Constructor with args
     public Student(String firstName, String lastName, String faculty,
-                   String gender, int age, int studentID) {
+                   String gender, int age, int studentID, int studentScore) {
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.faculty = faculty;
-        this.gender = gender;
         this.age = age;
+        this.gender = gender;
+        this.faculty = faculty;
+        this.lastName = lastName;
+        this.firstName = firstName;
         this.studentID = studentID;
+        this.studentScore = studentScore;
     }
 
     // Get student birthday method
     public int getBirthday(int age) {
         Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
         return calendar.get(Calendar.YEAR) - age;
     }
 
@@ -45,6 +45,7 @@ public class Student {
         System.out.printf("Student id: %s", studentID + "\n");
         System.out.printf("Student score: %s",studentScore + "\n");
         System.out.println("------End------");
+        System.out.println();
     }
 
 }
