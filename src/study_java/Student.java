@@ -16,6 +16,8 @@ public class Student {
 
     // Empty constructor
     public Student() {
+        // This constructor extends to child classes too
+        System.out.println("***'Empty constructor println'***");
     }
 
     // Constructor with args

@@ -1,11 +1,7 @@
 package study_java;
 
 
-public class Female extends Student{
-
-    public Female() {
-        super();
-    }
+public class Female extends Student {
 
     // Method that only women can do
     public void madeWomenThings() {

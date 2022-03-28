@@ -1,11 +1,7 @@
 package study_java;
 
 
-public class Male extends Student{
-
-    public Male() {
-        super();
-    }
+public class Male extends Student {
 
     // What men-can-do method
     public void toDoManThings() {
