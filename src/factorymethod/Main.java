@@ -13,7 +13,7 @@ public class Main {
         } else if (maker.equals("Rome")) {
             return new RomeWatchMaker();
         } else {
-            throw new RuntimeException("Производитель часов не найден");
+            throw new RuntimeException("Р¤Р°Р±СЂРёРєР° РЅРµ РЅР°Р№РґРµРЅР°");
         }
     }
 }
